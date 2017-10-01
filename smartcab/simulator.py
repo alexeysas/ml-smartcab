@@ -245,6 +245,8 @@ class Simulator(object):
 
         print "\nSimulation ended. . . "
 
+        print self.env.primary_agent.Q
+
         # Report final metrics
         if self.display:
             self.pygame.display.quit()  # shut down pygame
